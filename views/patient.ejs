@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/patientdes.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome 
+        <%= pname %> 
+    </h1>
+    <h2>
+        The art of medicine consists of amusing the patient<br>while nature cures the disease
+    </h2>
+    <h2>Here are your recent interactions</h2><br>
+
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th>Doctor</th>
+            <th>Disease</th>
+            <th>Hospital</th>
+            <th>Progress</th>
+            <th>Contact</th>
+        </tr>
+        </thead>
+        <tbody>
+            <% 
+              data1.forEach(data => {
+
+                %>
+                  <tr>
+                     <td><%=data.Dname %></td>
+                     <td><%=data.Disease %></td>
+                     <td><%=data.Hospital %></td>
+                     <td><%=data.Progress %></td>
+                     <td><%=data.contact %></td>  
+                    
+                  </tr>
+
+
+                <%    
+                });   
+                 
+                
+            %> 
+        <tbody>
+    </table>
+</div>
+
+
+    <a href="https://adtyavrdhn-hospitalfinder.netlify.app/" id="gotomap"><button class="button-31">Emergency</button></a>
+</body>
+</html>
