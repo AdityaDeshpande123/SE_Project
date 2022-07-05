@@ -8,4 +8,5 @@ To run the program follow the following steps:
 5. Open any browser and type the url : localhost:3900.
 6. You will be redirected to the page.
 
-Thank You!!!.
+Atlast i would like to Thank our Course Instructor for the Software Engeneering Course, C.K Vanamala Mam for promoting us to do this project and guiding us throughout the process.
+Thank You Mam and one and all!!.
